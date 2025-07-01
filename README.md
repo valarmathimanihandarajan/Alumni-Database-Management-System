@@ -24,8 +24,18 @@ A visually attractive, user-friendly web application designed to manage alumni a
 
  📸 Screenshots
 
-![Screenshot 2025-04-26 114245](https://github.com/user-attachments/assets/e7d18c66-6f9a-43e4-9b62-9e2e688b83d4)
+![Screenshot 2025-04-26 103500](https://github.com/user-attachments/assets/e31b12ea-353d-4453-95bf-b4b25f26605f)
+![Screenshot 2025-04-26 105115](https://github.com/user-attachments/assets/faeba7e2-8383-4339-95c4-e00bd0190f7c)
+![Screenshot 2025-04-26 114451](https://github.com/user-attachments/assets/9bc6bd4e-2624-4125-94c9-f7006757295a)
+![Screenshot 2025-04-26 114844](https://github.com/user-attachments/assets/a387a7c7-27fc-4cf0-a887-510ded130809)
+![Screenshot 2025-04-26 115302](https://github.com/user-attachments/assets/853dc9e5-6729-4f9d-aebc-ce9aa75a2e4c)
+![Screenshot 2025-04-26 114638](https://github.com/user-attachments/assets/5a4f2d6a-e5a5-461b-b03b-48a7b86f7fd5)
 
-![Screenshot 2025-04-26 115626](https://github.com/user-attachments/assets/d0258962-e775-4821-859a-d975874192a5)
+
+
+
+
+
+
 
 
