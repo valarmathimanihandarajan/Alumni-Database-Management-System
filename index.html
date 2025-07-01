@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Welcome | Alumni DBMS</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@400;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ffe0f0, #ffc0cb, #fff5f8);
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .background-hearts {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: 0;
+    }
+
+    .heart {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: pink;
+      opacity: 0.6;
+      animation: floatHearts 8s linear infinite;
+      border-radius: 50% 50% 0 0;
+      transform: rotate(-45deg);
+    }
+
+    .heart::after, .heart::before {
+      content: "";
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background: pink;
+      border-radius: 50%;
+    }
+
+    .heart::before {
+      top: -10px;
+      left: 0;
+    }
+
+    .heart::after {
+      left: 10px;
+      top: 0;
+    }
+
+    @keyframes floatHearts {
+      0% {
+        transform: translateY(100vh) rotate(-45deg);
+        opacity: 0.7;
+      }
+      100% {
+        transform: translateY(-10vh) rotate(-45deg);
+        opacity: 0;
+      }
+    }
+
+    .container {
+      z-index: 1;
+      text-align: center;
+      padding: 40px;
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 30px;
+      backdrop-filter: blur(12px);
+      box-shadow: 0 8px 30px rgba(255, 105, 180, 0.3);
+      animation: fadeInSlide 1.5s ease;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 30px;
+      color: #e91e63;
+      margin-bottom: 10px;
+    }
+
+    #quote {
+      font-style: italic;
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 30px;
+      animation: floatText 3s ease-in-out infinite;
+    }
+
+    button {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 14px 26px;
+      margin: 10px;
+      font-size: 16px;
+      font-weight: 500;
+      border-radius: 30px;
+      cursor: pointer;
+      transition: 0.4s ease-in-out;
+      box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
+    }
+
+    button:hover {
+      background-color: #e91e63;
+      transform: scale(1.08);
+      box-shadow: 0 8px 20px rgba(233, 30, 99, 0.5);
+    }
+
+    @keyframes fadeInSlide {
+      from {
+        transform: translateY(40px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes floatText {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-5px);
+      }
+    }
+
+    /* Random heart positions */
+    .heart:nth-child(1) { left: 10%; animation-delay: 0s; }
+    .heart:nth-child(2) { left: 25%; animation-delay: 1s; }
+    .heart:nth-child(3) { left: 40%; animation-delay: 2s; }
+    .heart:nth-child(4) { left: 60%; animation-delay: 3s; }
+    .heart:nth-child(5) { left: 75%; animation-delay: 4s; }
+    .heart:nth-child(6) { left: 90%; animation-delay: 5s; }
+
+    @media (max-width: 480px) {
+      .container {
+        width: 90%;
+        padding: 30px;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
+
+      button {
+        width: 100%;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Animated Pink Hearts Background -->
+  <div class="background-hearts">
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+    <div class="heart"></div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <h1>PSNA College of Engineering and Technology</h1>
+    <p id="quote">Connect. Share. Inspire.</p>
+    <button onclick="window.location.href='register.php'">Alumni Register</button>
+    <button onclick="window.location.href='login.php'">Alumni Login</button>
+    <button onclick="window.location.href='admin_login.php'">Admin Login</button>
+  </div>
+
+</body>
+</html>
